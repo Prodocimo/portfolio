@@ -23,7 +23,7 @@ main {
     box-shadow: 0px 0px 15px #00000048;
 }
 
-div.main-contents {
+section.main-contents {
     display: flex;
     flex-flow: column nowrap;
     margin: 20px;
@@ -31,11 +31,12 @@ div.main-contents {
 }
 
 div.card-info {
+    width: 100%;
     display: flex;
     flex-flow: row nowrap;
 }
 
-div.main-contents picture img.my-photo {
+section.main-contents picture img.my-photo {
     width: 90px;
     height: 100px;
     margin-top: 8px;
@@ -43,10 +44,51 @@ div.main-contents picture img.my-photo {
     border-radius: 8px;
 }
 
-div.main-contents div.card-info article {
+div.card-info article {
     margin-left: 20px;
     padding: 10px;
-    width: 40%;
+    width: 60%;
     text-align: justify;
     border-right: 1px solid #aaaaaa77;
+}
+ 
+div.social-media {
+ width: 40%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+div.social-media ul {
+    list-style: none;
+    columns: 2;
+    width: 140px;
+    height: 130px;
+}
+
+div.social-media ul li.social {
+    margin-bottom: 39px;
+    width: 40px;
+    height: 40px;
+}
+
+div.social-media img {
+    padding: 5px;
+    border-radius: 15px;
+}
+    
+div.social-media img#instagram {
+    background: linear-gradient(-45deg, #FEC053, #F11F3D, #C6258D, #5442D6);
+}
+
+div.social-media img#linkedin {
+    background: #0A66C2;
+}
+
+div.social-media img#discord {
+    background: #535FEE;
+}
+
+div.social-media img#github {
+    background: #1C2128;
 }
