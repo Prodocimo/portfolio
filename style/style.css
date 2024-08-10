@@ -9,15 +9,16 @@
 body {
     background-color: #0e0c18;
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: row nowrap;
     justify-content: center;
-    align-items: center;
+    align-items: start;
+    width: 100vw;
+    height: 100vh;
 }
 
 main {
     background-color: #ffffff;
-    width: 80vw;
-    max-width: 800px;
+    width: 50vw;
     margin-top: 100px;
     border-radius: 12px 12px;
     box-shadow: 0px 0px 15px #00000048;
@@ -47,29 +48,33 @@ section.main-contents picture img.my-photo {
 div.card-info article {
     margin-left: 20px;
     padding: 10px;
-    width: 60%;
+    width: 55%;
     text-align: justify;
     border-right: 1px solid #aaaaaa77;
 }
  
 div.social-media {
- width: 40%;
- display: flex;
- justify-content: center;
- align-items: center;
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 div.social-media ul {
     list-style: none;
-    columns: 2;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
     width: 140px;
-    height: 130px;
+    height: 140px;
 }
 
 div.social-media ul li.social {
     margin-bottom: 39px;
-    width: 40px;
-    height: 40px;
+    margin: 5px 5px;
+    width: 50px;
+    height: 50px;
 }
 
 div.social-media img {
@@ -79,16 +84,38 @@ div.social-media img {
     
 div.social-media img#instagram {
     background: linear-gradient(-45deg, #FEC053, #F11F3D, #C6258D, #5442D6);
+    transition: transform 0.2s ease-in-out;
 }
 
 div.social-media img#linkedin {
     background: #0A66C2;
+    transition: transform 0.2s ease-in-out;
 }
 
 div.social-media img#discord {
     background: #535FEE;
+    transition: transform 0.2s ease-in-out;
 }
 
 div.social-media img#github {
     background: #1C2128;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Abaixo estão as animações "hover" dos ícone das redes sociais */
+
+img#instagram:hover {
+    transform: scale(1.1);
+}
+
+img#linkedin:hover {
+    transform: scale(1.1);
+}
+
+img#discord:hover {
+    transform: scale(1.1);
+}
+
+img#github:hover {
+    transform: scale(1.1);
 }
