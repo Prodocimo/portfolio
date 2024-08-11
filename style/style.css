@@ -151,7 +151,7 @@ li.list-skills h2 {
 }
 
 
-/* Estilo da div "Projetos" */
+/* Estilo do botão "Projetos" */
 
 span {
     width: 100%;
@@ -166,19 +166,30 @@ span button.projects-btn {
     padding: 5px;
     width: 40%;
     height: 35px;
-    border-radius: 4px;
+    border-radius: 6px;
     border: 1px solid rgba(151, 150, 150, 0.527);
     cursor: pointer;
     transition: transform 0.1s ease-in-out;
-    background-color: #0e0c18;
+    background: linear-gradient(45deg, #1b172e, #0e0c18, #1b172e);
     color: white;
+    box-shadow: 0px 0px 10px #00000036;
 }
 
 button.projects-btn:hover {
-
     transform: scale(1.03);
 } 
 
 button.projects-btn:active {
     transform: scale(1.0);
+}
+
+/* Estilo da div-card "Projetos" */
+
+div#card-projects {
+    height: 500px;
+    display: none;
+}
+
+div.items {
+    
 }
