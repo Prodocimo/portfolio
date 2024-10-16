@@ -1,2 +1,42 @@
 @charset "UTF-8";
+@media screen and (max-width: 768px) {
+ 
+    main {
+        width: 90vw;
+        margin-top: 20px;
+    }
 
+    div.card-info {
+        flex-flow: column nowrap;
+        align-items: center;
+
+    }
+
+    div.card-info article {
+        width: 90%;
+        border-right: none;
+        border-bottom: 1px solid #aaaaaa77;
+        margin: 10px;
+    }
+    
+    div.social-media {
+        width: 90%;
+        margin: 10px;
+    }
+
+    div.social-media ul {
+        width: 100%;
+        height: 50px;
+    }
+
+    div.card-skills ul {
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    div.main-items {
+        flex-flow: column;
+    }
+
+}
