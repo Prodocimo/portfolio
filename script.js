@@ -1,9 +1,11 @@
-const Projects = document.getElementById("card-projects")
+const Projects = document.querySelector('.card-projects');
+const ProjectsBtnOpen = document.querySelector('.projects-btn-open');
+const ProjectsBtnClose = document.querySelector('.projects-btn-open.projects-btn-close');
 
-function ClickProjects() {
-    if (Projects.style.display == 'block') {
-        Projects.style.display = 'none'
-    } else {
-        Projects.style.display = 'block'
-    }
-}
+
+ProjectsBtnOpen.onclick = function() {
+        Projects.classList.toggle('card-projects-opened');
+        ProjectsBtnOpen.classList.toggle('projects-btn-close')
+    } 
+
+    

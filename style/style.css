@@ -160,7 +160,7 @@ span {
     align-items: center;
 }
 
-span button.projects-btn {
+span button.projects-btn-open {
     margin: 10px;
     padding: 5px;
     width: 40%;
@@ -174,24 +174,29 @@ span button.projects-btn {
     box-shadow: 0px 0px 10px #00000036;
 }
 
-button.projects-btn:hover {
+button.projects-btn-open:hover {
     transform: scale(1.03);
 } 
 
-button.projects-btn:active {
+button.projects-btn-open:active {
     transform: scale(1.0);
 }
 
 /* Estilo da div-card "Projetos" */
 
-div#card-projects {
-    display: none;
+div.card-projects {
+    height: 0;
     text-align: center;
     margin: 8px;
     border-top: 1px solid #aaaaaa77;
+    overflow: hidden !important;
 }
 
-div#card-projects h1 {
+div.card-projects.card-projects-opened {
+    height: auto;
+}
+
+div.card-projects h1 {
     margin-top: 30px;
 }
 
